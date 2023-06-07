@@ -21,4 +21,7 @@ This project contains several scripts for various purposes. Here is a brief desc
 *Command that isplay current directory contents in long format, with user and group IDs displayed numerically, and hidden files.
 
 #6-firstdirectory
-*Command that creates a directory named my_first_directory in the /tmp/ directory. 
+*Command that creates a directory named my_first_directory in the /tmp/ directory.
+
+#7-movethatfile
+*Command to move the file betty from /tmp/ to /tmp/my_first_directory. 
