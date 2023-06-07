@@ -31,3 +31,6 @@ This project contains several scripts for various purposes. Here is a brief desc
 
 #9-firstdirdeletion
 *Command to delete the directory my_first_directory that is in the /tmp directory.
+
+#10-back
+*Command that changes the working directory to the previous one.
