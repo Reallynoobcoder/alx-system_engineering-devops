@@ -28,3 +28,6 @@ This project contains several scripts for various purposes. Here is a brief desc
 
 #8-firstdelete
 *Command to delete the file betty in /tmp/my_first_directory.
+
+#9-firstdirdeletion
+*Command to delete the directory my_first_directory that is in the /tmp directory.
