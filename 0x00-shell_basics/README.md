@@ -10,3 +10,6 @@ This project contains several scripts for various purposes. Here is a brief desc
 
 #2-bring_me_home
 *Command that changes the working directory to the user’s home directory.
+
+#3-listfiles
+*Command to display current directory contents in a long format.
