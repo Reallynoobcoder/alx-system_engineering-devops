@@ -49,3 +49,6 @@ This project contains several scripts for various purposes. Here is a brief desc
 
 #100-lets_move
 *Command that moves all files beginning with an uppercase letter to the directory /tmp/u.
+
+#101-clean_emacs
+*Command that deletes all files in the current working directory that end with the character ~.
