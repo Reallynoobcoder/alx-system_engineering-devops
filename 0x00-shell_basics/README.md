@@ -15,4 +15,7 @@ This project contains several scripts for various purposes. Here is a brief desc
 *Command to display current directory contents in a long format.
 
 #4-listmorefiles
-*Command to display current directory contents, including hidden files. 
+*Command to display current directory contents, including hidden files.
+
+#5-listfilesdigitonly
+*Command that isplay current directory contents in long format, with user and group IDs displayed numerically, and hidden files. 
