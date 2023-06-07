@@ -52,3 +52,6 @@ This project contains several scripts for various purposes. Here is a brief desc
 
 #101-clean_emacs
 *Command that deletes all files in the current working directory that end with the character ~.
+
+#102-tree
+*Command that creates the directories welcome/, welcome/to/ and welcome/to/school in the current directory.
