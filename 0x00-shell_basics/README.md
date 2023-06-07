@@ -34,3 +34,6 @@ This project contains several scripts for various purposes. Here is a brief desc
 
 #10-back
 *Command that changes the working directory to the previous one.
+
+#11-listsi
+*Command that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory in long format.
