@@ -13,3 +13,6 @@ This project contains several scripts for various purposes. Here is a brief desc
 
 #3-listfiles
 *Command to display current directory contents in a long format.
+
+#4-listmorefiles
+*Command to display current directory contents, including hidden files. 
