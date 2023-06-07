@@ -24,4 +24,7 @@ This project contains several scripts for various purposes. Here is a brief desc
 *Command that creates a directory named my_first_directory in the /tmp/ directory.
 
 #7-movethatfile
-*Command to move the file betty from /tmp/ to /tmp/my_first_directory. 
+*Command to move the file betty from /tmp/ to /tmp/my_first_directory.
+
+#8-firstdelete
+*Command to delete the file betty in /tmp/my_first_directory.
