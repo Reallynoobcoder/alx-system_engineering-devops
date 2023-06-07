@@ -18,4 +18,7 @@ This project contains several scripts for various purposes. Here is a brief desc
 *Command to display current directory contents, including hidden files.
 
 #5-listfilesdigitonly
-*Command that isplay current directory contents in long format, with user and group IDs displayed numerically, and hidden files. 
+*Command that isplay current directory contents in long format, with user and group IDs displayed numerically, and hidden files.
+
+#6-firstdirectory
+*Command that creates a directory named my_first_directory in the /tmp/ directory. 
