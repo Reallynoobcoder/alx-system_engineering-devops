@@ -14,4 +14,6 @@
 
 *A Command that prints all the groups the current user is part of.
 
+#3-new_owner
 
+*A command that changes the owner of the file hello to the user betty.
