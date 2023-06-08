@@ -9,3 +9,9 @@
 #1-who_am_i
 
 *A Command that prints the effective username of the current user.
+
+#2-groups
+
+*A Command that prints all the groups the current user is part of.
+
+
