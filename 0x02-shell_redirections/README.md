@@ -22,3 +22,11 @@
 #4-lastlines
 
 *Command to display the last 10 lines of /etc/passwd
+
+#5-firstlines
+
+*Command to display the first 10 lines of /etc/passwdi
+
+#6-third_line
+
+*Command that displays the third line of the file iacta.
