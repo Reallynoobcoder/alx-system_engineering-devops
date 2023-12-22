@@ -1,10 +1,24 @@
 # Install Flask version 2.1.0
-package { 'flask':
-  ensure   => '2.1.0',
-  provider => 'pip3',
-  require  => Package['python3-pip']
+$python_version = '3.8.10'
+$flask_version = '2.1.0'
+$werkzeug_version = '2.1.1'
+
+package { 'python3.8':
+  ensure => $python_version,
 }
 
 package { 'python3-pip':
-  ensure => 'installed',
+  ensure => present,
+}
+
+package { 'flask':
+  ensure   => $flask_version,
+  provider => 'pip',
+  require  => Package['python3-pip'],
+}
+
+package { 'werkzeug':
+  ensure   => $werkzeug_version,
+  provider => 'pip',
+  require  => Package['python3-pip'],
 }
