@@ -1,0 +1,7 @@
+# Configure ssh client to connect to a server without password.
+Host alx_server
+    HostName 54.221.178.173
+    User ubuntu
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
+
