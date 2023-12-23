@@ -4,4 +4,3 @@ Host alx_server
     User ubuntu
     IdentityFile ~/.ssh/school
     PasswordAuthentication no
-
