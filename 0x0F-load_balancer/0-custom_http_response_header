@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Nginx Config: 301 Redirect from /redirect_me to /redirected_page.html
+
+sudo apt-get update
+sudo apt-get -y install nginx
+
+sudo bash -c 'echo "Hello World!" > /var/www/html/index.nginx-debian.html'
+
+line_number=53
+text_to_insert="location /redirect_me {\n\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n}"
+
+sudo sed -i "${line_number}a$text_to_insert" /etc/nginx/sites-available/default
+
+sudo sed -i '/server_name _;/a \
+\ \ \ error_page 404 /custom_404.html;\n\
+\ \ \ location = /custom_404.html {\n\
+\ \ \ \ \ root /usr/share/nginx/html;\n\
+\ \ \ \ \ internal;\n\
+\ \ \ }' /etc/nginx/sites-enabled/default
