@@ -9,7 +9,7 @@ sudo bash -c 'echo "frontend web_front
 
    backend web_back
    balance roundrobin
-   server 456242-web-01 35.168.7.64 check
+   server 456242-web-01 35.168.7.64:80 check
    server 456242-web-02 34.204.81.91:80 check
 " >> /etc/haproxy/haproxy.cfg'
 sudo service haproxy restart
