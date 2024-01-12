@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Takes a subdomain and a domain and returns information about the subdomain
+
+dns_info() {
+    local domain="$1"
+    local subdomain="$2"
+    ip_address=$(dig "$subdomain.$domain" +short)
+    record_type=$(dig "$subdomain.$domain" | awk '/ANSWER SECTION:/ {getline; print $4}')
+
+    echo "The subdomain $subdomain is a $record_type record and points to $ip_address"
+}
+
+if (( $# == 1)); then
+    dns_info "$1" "www"
+    dns_info "$1" "lb-01"
+    dns_info "$1" "web-01"
+    dns_info "$1" "web-02"
+elif (( $# == 2)); then
+    dns_info "$1" "$2"
+fi
