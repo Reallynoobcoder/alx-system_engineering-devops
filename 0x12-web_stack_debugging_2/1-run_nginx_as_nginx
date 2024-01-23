@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+#Configure nginx to run as nginx user and listening on on port 8080
+
+# Step 1: Create the nginx user
+useradd -r -s /usr/sbin/nologin -m -d /var/www nginx
+
+# Step 2: Update Nginx configuration to run as nginx user
+nginx_conf="/etc/nginx/nginx.conf"
+
+# Backup the original Nginx configuration
+cp "$nginx_conf" "$nginx_conf.bak"
+
+# Set the user directive to nginx in the Nginx configuration
+sed -i 's/user www-data;/user nginx;/' "$nginx_conf"
+
+# Step 3: Configure Nginx to listen on all active IPs on port 8080
+nginx_site_conf="/etc/nginx/sites-available/default"
+
+# Backup the original default site configuration
+cp "$nginx_site_conf" "$nginx_site_conf.bak"
+
+# Update the default site configuration to listen on port 8080
+sed -i '/listen 80 default_server;/ a \    listen 8080 default_server;' "$nginx_site_conf"
+
+# Restart Nginx to apply the changes
+service nginx restart
