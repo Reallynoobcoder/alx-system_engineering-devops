@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#Configure nginx to run as nginx user and listening on on port 8080
+# Configure nginx to run as nginx user and listen on port 8080
 
 # Step 1: Create the nginx user
 useradd -r -s /usr/sbin/nologin -m -d /var/www nginx
@@ -21,7 +21,8 @@ nginx_site_conf="/etc/nginx/sites-available/default"
 cp "$nginx_site_conf" "$nginx_site_conf.bak"
 
 # Update the default site configuration to listen on port 8080
-sed -i '/listen 80 default_server;/ a \    listen 8080 default_server;' "$nginx_site_conf"
+sed -i '/listen 80 default_server;/
+a \    listen 8080 default_server;' "$nginx_site_conf"
 
 # Restart Nginx to apply the changes
 service nginx restart
