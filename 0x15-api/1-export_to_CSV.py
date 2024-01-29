@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Fetch & display TODO list progress and export data in CSV format."""
-import requests
 import csv
+import requests
 from sys import argv
 
 if __name__ == "__main__":
